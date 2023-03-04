@@ -15,12 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var image4: UIImageView!
     @IBOutlet weak var image5: UIImageView!
     
-    @IBOutlet weak var progression1: UIProgressView!
-    @IBOutlet weak var progression2: UIProgressView!
-    @IBOutlet weak var progression3: UIProgressView!
-    @IBOutlet weak var progression4: UIProgressView!
-    @IBOutlet weak var progression5: UIProgressView!
-    
     let defaultImage = UIImage(systemName: "photo")
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +36,11 @@ class ViewController: UIViewController {
         
         guard let url = URL(string: "https://images.pexels.com/photos/51311/cow-calf-cattle-stock-51311.jpeg?cs=srgb&dl=pexels-pixabay-51311.jpg&fm=jpg") else { return }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let imageData = data else { return }
-            let image = UIImage(data: imageData)
+        getImageFromURL(url: url) { image in
             DispatchQueue.main.async {
                 self.image1.image = image
             }
-        }.resume()
+        }
     }
     
     @IBAction func loadImage2(_ sender: UIButton) {
@@ -98,5 +90,4 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }

@@ -248,11 +248,6 @@
                         <outlet property="image3" destination="qYt-0m-kCD" id="nMa-HR-NGs"/>
                         <outlet property="image4" destination="eOs-iV-Ix6" id="gfl-ac-bin"/>
                         <outlet property="image5" destination="rgy-1q-J18" id="vmr-xv-hPi"/>
-                        <outlet property="progression1" destination="wky-FY-LvU" id="HRy-BR-7K5"/>
-                        <outlet property="progression2" destination="RWt-rg-GGG" id="Eze-cM-4U9"/>
-                        <outlet property="progression3" destination="6j2-fk-MJf" id="TD5-8b-UcW"/>
-                        <outlet property="progression4" destination="PwG-at-Z4g" id="tn2-mH-u4r"/>
-                        <outlet property="progression5" destination="fhK-Wq-T5o" id="iVw-Zd-s66"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
